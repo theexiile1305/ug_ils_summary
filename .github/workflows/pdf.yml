@@ -64,7 +64,7 @@ jobs:
           to: ${{secrets.MAIL_TO}}
           from: ${{secrets.MAIL_FROM}}
           body: Build job of latex build was completed successfully!
-          reply_to: l${{secrets.REPLY_TO}}
+          reply_to: ${{secrets.REPLY_TO}}
           attachments: document.pdf 
 
       - name: Upload Release Asset
