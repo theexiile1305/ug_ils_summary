@@ -1,0 +1,34 @@
+\section{Sicherheitskonzept der ILS}
+\begin{warningbox}{Kritische Infrastrukturen (KRITIS)}
+   \begin{itemize}
+        \item Organisationen und Einrichtungen mit wichtiger Bedeutung für das staatliche Gemeinwesen
+        \item Ausfall: Störungen öffentliche Sicherheit \& Versorgung
+        \item laut BaySÜG Art. 3 (2/3) ist ILS KRITIS
+   \end{itemize}
+\end{warningbox}
+\begin{sectionbox}{IT-Sicherheit}
+    \begin{itemize}
+        \item Sicherstellung des CIA-Principles
+        \item \textbf{C}onfidentiality: Geheimhaltung von Informationen
+        \item \textbf{I}ntegrity:Integrität von Informationen
+        \item \textbf{A}vailability: Verfügbarkeit von Informationen
+    \end{itemize}
+\end{sectionbox}
+\begin{sectionbox}{Bereiche}
+    \begin{itemize}
+        \item Personal: Sicherheitsüberprüfung Art. 3 (1/4) \& Schweigepflicht
+        \item Gebäude: Einzäunung \& Videoüberwachung\\ 
+        \ra Zutrittskontrolle via Token (anonym, Tracing)\\
+        \ra stetige Beaufsichtigung von Besuchern\\
+        \ra Fensterverglasung durchwurfsicher \& verspiegelt
+        \item Technik: zwei getrennte Stromversorgungen\\
+        \ra USV (2h), Notstromaggregat (12h)\\
+        \ra externe Einspeisung durch THW\\
+        \ra zwei getrennte Telefonleitungen\\
+        \ra Ansteuerung Funk via VPN\\
+        \ra Ausfall VPN: Ansteuerung via Funkmast
+        \item EDV/Daten: Segmentierung der Netzwerke\\
+        \ra Separation von Verwaltung \& Einsatzleitsystem\\
+        \ra Authentifizierung, Authorisierung, Logging
+    \end{itemize}
+\end{sectionbox}
