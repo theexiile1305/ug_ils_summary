@@ -54,20 +54,6 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: email-smtp.eu-central-1.amazonaws.com
-          server_port: 587
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
-          subject: ${{github.repository}} --> Build job of latex build was completed successfully!
-          to: ${{secrets.MAIL_TO}}
-          from: ${{secrets.MAIL_FROM}}
-          body: Build job of latex build was completed successfully!
-          reply_to: ${{secrets.REPLY_TO}}
-          attachments: document.pdf 
-
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
