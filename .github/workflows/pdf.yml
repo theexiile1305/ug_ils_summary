@@ -37,7 +37,7 @@ jobs:
         with:
           entrypoint: "/github/workspace/generate.sh"
 
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         with:
           name: Generated document
           path: "document.pdf"
